@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Tipsy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="64" translatesAutoresizingMaskIntoConstraints="NO" id="jbr-Op-xyv">
+                                <rect key="frame" x="40" y="94" width="354" height="184"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Toplam Fatura Tutarını Giriniz." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c7h-xp-pxB">
+                                        <rect key="frame" x="0.0" y="0.0" width="354" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="4Zo-Od-xwy"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Galvji" family="Galvji" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="e2J-0T-CLr">
+                                        <rect key="frame" x="0.0" y="114" width="354" height="70"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="70" id="Fge-Ac-zUD"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="38" translatesAutoresizingMaskIntoConstraints="NO" id="zSp-r8-KVS">
+                                <rect key="frame" x="0.0" y="347.5" width="414" height="272.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Oran Seçin" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ro7-Al-atB">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="24"/>
+                                        <fontDescription key="fontDescription" name="Galvji" family="Galvji" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="vwX-cC-2mt">
+                                        <rect key="frame" x="0.0" y="62" width="414" height="36"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bX1-47-lIu">
+                                                <rect key="frame" x="0.0" y="0.0" width="104.5" height="36"/>
+                                                <fontDescription key="fontDescription" name="Galvji" family="Galvji" pointSize="20"/>
+                                                <color key="tintColor" red="0.58072251080000004" green="0.066734083" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="%0"/>
+                                                <connections>
+                                                    <action selector="oranSecimi:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uQz-Z9-OSm"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ieq-2e-AQW">
+                                                <rect key="frame" x="154.5" y="0.0" width="105" height="36"/>
+                                                <fontDescription key="fontDescription" name="Galvji" family="Galvji" pointSize="20"/>
+                                                <color key="tintColor" red="0.58072251080000004" green="0.066734083" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="%10"/>
+                                                <connections>
+                                                    <action selector="oranSecimi:" destination="BYZ-38-t0r" eventType="touchUpInside" id="e0z-Aw-52d"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iuU-w0-A3K">
+                                                <rect key="frame" x="309.5" y="0.0" width="104.5" height="36"/>
+                                                <fontDescription key="fontDescription" name="Galvji" family="Galvji" pointSize="20"/>
+                                                <color key="tintColor" red="0.58072251080000004" green="0.066734083" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="%20"/>
+                                                <connections>
+                                                    <action selector="oranSecimi:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BcW-MJ-ZMe"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bölmeyi Seçin" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mCx-Lo-Bnd">
+                                        <rect key="frame" x="0.0" y="136" width="414" height="24"/>
+                                        <fontDescription key="fontDescription" name="Galvji" family="Galvji" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="95" translatesAutoresizingMaskIntoConstraints="NO" id="0Ta-Xa-ZG5">
+                                        <rect key="frame" x="0.0" y="198" width="414" height="74.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KlX-va-r5Q">
+                                                <rect key="frame" x="0.0" y="25.5" width="159.5" height="24"/>
+                                                <color key="tintColor" red="0.58072251080000004" green="0.066734083" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="Galvji" family="Galvji" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="Le1-bV-4nw">
+                                                <rect key="frame" x="254.5" y="21.5" width="159.5" height="32"/>
+                                                <color key="tintColor" red="0.58072251080000004" green="0.066734083" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <connections>
+                                                    <action selector="sayac:" destination="BYZ-38-t0r" eventType="valueChanged" id="gG8-cl-ZOE"/>
+                                                </connections>
+                                            </stepper>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="KlX-va-r5Q" firstAttribute="leading" relation="lessThanOrEqual" secondItem="0Ta-Xa-ZG5" secondAttribute="leading" constant="100" id="ahr-E9-4ZP"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="igI-fJ-caX">
+                                <rect key="frame" x="100" y="736" width="214" height="56"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="dsr-GB-KHf"/>
+                                </constraints>
+                                <color key="tintColor" red="0.58072251080000004" green="0.066734083" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Hesapla">
+                                    <fontDescription key="titleFontDescription" name="Galvji-Bold" family="Galvji" pointSize="35"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="HesaplaButonu:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hge-Q3-tsQ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="jbr-Op-xyv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="6X2-4A-zpb"/>
+                            <constraint firstItem="zSp-r8-KVS" firstAttribute="top" secondItem="jbr-Op-xyv" secondAttribute="bottom" constant="69.5" id="Blv-JP-1BJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="igI-fJ-caX" secondAttribute="bottom" constant="70" id="JZu-ON-6ZM"/>
+                            <constraint firstItem="jbr-Op-xyv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="JfO-jk-3pw"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="igI-fJ-caX" secondAttribute="trailing" constant="100" id="Lys-N0-g7B"/>
+                            <constraint firstItem="igI-fJ-caX" firstAttribute="top" secondItem="zSp-r8-KVS" secondAttribute="bottom" constant="116" id="d1Z-Wc-Ins"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jbr-Op-xyv" secondAttribute="trailing" constant="20" id="dcE-EH-1f2"/>
+                            <constraint firstItem="zSp-r8-KVS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="dvm-jo-IFV"/>
+                            <constraint firstItem="igI-fJ-caX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="jaG-fT-lXf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="zSp-r8-KVS" secondAttribute="trailing" id="p9e-NA-Jmx"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="O2z-e5-e51"/>
+                    <connections>
+                        <outlet property="bolmeNumarasılbl" destination="KlX-va-r5Q" id="hKV-Uf-KCd"/>
+                        <outlet property="onnButton" destination="Ieq-2e-AQW" id="YCR-oW-ccW"/>
+                        <outlet property="sayac" destination="Le1-bV-4nw" id="HoU-2a-osN"/>
+                        <outlet property="sıfırButton" destination="bX1-47-lIu" id="Qhl-yk-5JA"/>
+                        <outlet property="tutarTextField" destination="e2J-0T-CLr" id="69z-Gl-9T6"/>
+                        <outlet property="yirmiButton" destination="iuU-w0-A3K" id="9RF-oy-L9n"/>
+                        <segue destination="jiE-Xv-yPC" kind="show" identifier="goToSonuc" id="AAx-ps-S7G"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1042.0289855072465" y="99.776785714285708"/>
+        </scene>
+        <!--HesapViewController-->
+        <scene sceneID="tad-TU-Sj9">
+            <objects>
+                <viewController title="HesapViewController" id="jiE-Xv-yPC" customClass="HesaplaViewController" customModule="Tipsy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YWa-7d-x3Y">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="89" translatesAutoresizingMaskIntoConstraints="NO" id="vjR-cC-LT3">
+                                <rect key="frame" x="40" y="100" width="334" height="231"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kişi Başına Toplam Tutar" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OgF-lx-7S3">
+                                        <rect key="frame" x="0.0" y="0.0" width="334" height="71"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="71" id="gWh-5k-NT2"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Galvji" family="Galvji" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dAt-e9-dSH">
+                                        <rect key="frame" x="0.0" y="160" width="334" height="71"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="71" id="Aa3-ES-vvM"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Galvji" family="Galvji" pointSize="30"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="%10 bahşiş bırakın" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qf6-Om-1eK">
+                                <rect key="frame" x="10" y="426" width="394" height="24"/>
+                                <fontDescription key="fontDescription" name="Galvji" family="Galvji" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pfy-Ct-eO1">
+                                <rect key="frame" x="100" y="537" width="214" height="96.5"/>
+                                <color key="tintColor" red="0.58072251080000004" green="0.066734083" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Tekrar Hesapla">
+                                    <fontDescription key="titleFontDescription" name="Galvji-Bold" family="Galvji" pointSize="35"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="hesaplama:" destination="jiE-Xv-yPC" eventType="touchUpInside" id="X68-Mq-jAI"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Sl0-sW-xfp"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Qf6-Om-1eK" firstAttribute="leading" secondItem="Sl0-sW-xfp" secondAttribute="leading" constant="10" id="6g0-7h-H8Q"/>
+                            <constraint firstItem="Pfy-Ct-eO1" firstAttribute="leading" secondItem="Sl0-sW-xfp" secondAttribute="leading" constant="100" id="9Cz-jj-cii"/>
+                            <constraint firstItem="Sl0-sW-xfp" firstAttribute="trailing" secondItem="vjR-cC-LT3" secondAttribute="trailing" constant="40" id="Ig9-bT-6cD"/>
+                            <constraint firstItem="Qf6-Om-1eK" firstAttribute="top" secondItem="vjR-cC-LT3" secondAttribute="bottom" constant="95" id="ULW-LB-ovu"/>
+                            <constraint firstItem="Sl0-sW-xfp" firstAttribute="trailing" secondItem="Pfy-Ct-eO1" secondAttribute="trailing" constant="100" id="biD-qC-AU4"/>
+                            <constraint firstItem="Sl0-sW-xfp" firstAttribute="trailing" secondItem="Qf6-Om-1eK" secondAttribute="trailing" constant="10" id="deD-Dd-RYo"/>
+                            <constraint firstItem="vjR-cC-LT3" firstAttribute="top" secondItem="Sl0-sW-xfp" secondAttribute="top" constant="100" id="gu1-73-6eL"/>
+                            <constraint firstItem="Pfy-Ct-eO1" firstAttribute="top" secondItem="Qf6-Om-1eK" secondAttribute="bottom" constant="87" id="jNp-zc-5fK"/>
+                            <constraint firstItem="vjR-cC-LT3" firstAttribute="leading" secondItem="Sl0-sW-xfp" secondAttribute="leading" constant="40" id="yts-Jh-Awh"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Vcu-YB-J3V"/>
+                    <connections>
+                        <outlet property="bahsisEkranilbl" destination="Qf6-Om-1eK" id="kRX-1B-ohK"/>
+                        <outlet property="gosterilenTutarlbl" destination="dAt-e9-dSH" id="poM-aN-0Jk"/>
+                        <outlet property="yazdirmaEkranilbl" destination="OgF-lx-7S3" id="LGT-nC-8YD"/>
+                        <segue destination="M0m-Hd-vGg" kind="unwind" identifier="back" unwindAction="unwind:" id="9jp-95-JKI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h8k-A9-EK8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="M0m-Hd-vGg" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1981.1594202898552" y="99.776785714285708"/>
+        </scene>
+    </scenes>
+</document>
